@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Projects</title>
+		<style type="text/css">
+			body, html {
+			     background-color: rgb(220,220,220);
+			     text-align: center;
+			     font-family: "Verdana", "Geneva", "sans-serif";
+			}
+			h1 {
+			     text-transform: uppercase;
+			     color: #0066ff;
+			     font-size: 500%;
+			     border-top: 1px solid black;
+			     border-bottom: 1px solid black;
+			     text-align: center;
+			}
+			h2 {
+			     text-transform: uppercase;
+			     color: #0066ff;
+			     border-top: 1px solid black;
+			     border-bottom: 1px solid black;
+			     text-align: center;
+			}
+			h3 {
+			     text-align: left;
+			     margin: 5px;
+			}
+			input {
+			     border: 0px solid black;
+			     font-size: 15px;
+			}
+			th {
+			     text-align: left;
+			}
+			td {
+			     text-align: left;
+			}
+			a {
+			     color: black;
+			}
+			.section {
+				margin: auto;
+			    width: 75%;
+			}
+			#subtitle {
+			     font-size: 50%;
+			     color: black;
+			}
+			#searchIcon {
+			     fill: black;
+			     height: 1.17em;
+			     width: 1.17em;
+			     float: right;
+			     padding-right: 10%;
+			}
+			#searchIcon:hover {
+			     fill: #0066ff;
+			}
+			#filters {
+			     margin: auto;
+			     padding: 0px;
+			     margin-bottom: 5px;
+			     margin-top: 5px;
+			     width: 80%;
+			}
+			#search {
+			     top: 0px;
+			     padding: 0px;
+			     width: 70%;
+			     font-size: 1.5em;
+			}
+			#order {
+			     border: 0px solid black;
+			     padding: 0px;
+			     font-size: 1.4em;
+			     width: 20%;
+			}
+			.desc {
+			     text-align: left;
+			     margin: 5px;
+			     margin-left: 10px;
+			     margin-bottom: 20px;
+			     display: inline-block;
+			     position: absolute;
+			     top: 25px;
+			}
+			.tech {
+			     display: inline-block;
+			     height: 5%;
+			     position: relative;
+			     width: 30%;
+			     text-align: left;
+			}
+			.title {
+			     color: #0066ff;
+			     width: 60%;
+			     margin: 5px;
+			     margin-left: 10px;
+			     display: inline-block;
+			     position: absolute;
+			     top: 3px;
+			}
+			.date {
+			     position: absolute;
+			     top: 0px;
+			     right: 0px;
+			     margin: 5px;
+			     font-style: oblique;
+			     font-weight: bold;
+			}
+			.main {
+			     padding: 10px;
+			     margin: auto;
+			     border: 1px solid black;
+			     background-color: white;
+			     width: 60%;
+			     text-align: left;
+			}
+			/*projects*/
+			.status {
+			     position: absolute;
+			     bottom: 0px;
+			     right: 0px;
+			     margin: 5px;
+			     font-style: normal;
+			     font-weight: bold;
+			}
+			.list {
+			     position: relative;
+			     padding: 0px;
+			     margin: auto;
+			     width: 80%;
+			}
+			.object {
+			     position: relative;
+			     margin: 5px;
+			     background-color: rgb(250,250,250);
+			     overflow: none;
+			     text-align: left;
+			     height: 120px;
+			     vertical-align: text-top;
+			     top: 8px;
+			     border-bottom: 1px solid black;
+			}
+			.object:hover {
+			     background-color: #DBE4FF;
+			}
+			.icon {
+			     filter: grayscale(100%);
+			     height: 76px;
+			     text-align: left;
+			     vertical-align: middle;
+			     margin: 18px;
+			     margin-left: 22px;
+			     margin-top: 8px;
+			     border: 2px solid black;
+			}
+			@media only screen and (max-width: 1100px) {
+			    .main {
+			         width: 90%;
+			    }
+			    h1 {
+			         font-size: 300%;
+			    }
+			}
+			@media only screen and (max-width: 700px) {
+			    h1 {
+			         font-size: 200%;
+			    }
+			    .title {
+			         width: 100%;
+			    }
+			    .desc {
+			         margin-left: 100px;
+			    }
+			    .list {
+			         width: 100%;
+			    }
+			    .object {
+			         height: 160px;
+			    }
+			    .icon {
+			         margin: 0px;
+			         top: 35px;
+			         left: 10px;
+			         position: absolute;
+			    }
+			    @media only screen and (max-width: 500px) {
+			        .date {
+			             display: none;
+			        }
+			        .status {
+			             display: none;
+			        }
+			    }
+			}
+     </style>
+	</head>
+	<body>
+		<div class="main">
+			<h1>
+           	curriculum vitae
+            
+			<div id="subtitle">Steven Bronsveld</div>
+			</h1>
+				<h2>Personal Information</h2>
+				<div id="personal_information" class="section">
+				<table class="section">
+					<tr>
+						<th>Name</th>
+						<td>Steven Bronsveld</td>
+					</tr>
+					<tr>
+						<th>Adress</th>
+						<td>Cornetstraat 15</td>
+					</tr>
+					<tr>
+						<th>Zip code</th>
+						<td>6922 KS</td>
+					</tr>
+					<tr>
+						<th>City</th>
+						<td>Duiven</td>
+					</tr>
+					<tr>
+						<th>County</th>
+						<td>The Netherlands</td>
+					</tr>
+					<tr>
+						<th>Date of birth</th>
+						<td>31 October 1999</td>
+					</tr>
+					<tr>
+						<th>Phone</th>
+						<td>+31 6 36404775</td>
+					</tr>
+					<tr>
+						<th>Driver Licence</th>
+						<td>B</td>
+					</tr>
+					<tr>
+						<th>Company name</th>
+						<td>tbt</td>
+					</tr>
+					<tr>
+						<th>VAT number</th>
+						<td>tbt</td>
+					</tr>
+					<tr>
+						<th>Chamber of commers</th>
+						<td>tbt</td>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<td>
+							<a href="mailto:stevengoud@gmail.com">stevengoud@gmail.com</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<h2>Background</h2>
+			<div id="background" class="section">
+            I have been programming since I was twelve years old. I started out in Java. This is the language I am most familliar with. In the summer of 2016 I started using node.js, HTML, JavaScript and CSS to write my own servers and websites. With the skills I
+            learned that summer I participated in the Informatica Actief programming contest. My teammate and I won this contest with our entry MillionDollarRun. For my Study Project I chose the subject of Machine Learning. This won the 3i-Award for best
+            informatica study project of 2018.
+			</div>
+			<h2>Education</h2>
+			<div id="education" class="section">
+			<h3>VWO Candea College NT&NG 
+				<i>(preliminary)</i>
+			</h3>
+			<tr>
+				<th></th>
+				<table class="section">
+					<tr>
+						<th>Biology</th>
+						<td>7.7</td>
+					</tr>
+					<tr>
+						<th>CKV</th>
+						<td>G</td>
+					</tr>
+					<tr>
+						<th>German</th>
+						<td>7.5</td>
+					</tr>
+					<tr>
+						<th>English</th>
+						<td>7.7</td>
+					</tr>
+					<tr>
+						<th>Computer Science</th>
+						<td>9.4</td>
+					</tr>
+					<tr>
+						<th>Social Science</th>
+						<td>6.7</td>
+					</tr>
+					<tr>
+						<th>Physics</th>
+						<td>8.2</td>
+					</tr>
+					<tr>
+						<th>Dutch</th>
+						<td>6.9</td>
+					</tr>
+				    <tr>
+						<th>O&O</th>
+						<td>7.4</td>
+					</tr>
+					<tr>
+						<th>Chemistry</th>
+						<td>7.4</td>
+					</tr>
+					<tr>
+						<th>Math</th>
+						<td>7.9</td>
+					</tr>
+				</table>
+			</tr>
+			<h3>Awards</h3>
+			<table class="section">
+				<tr>
+					<th>
+						<a href="http://www.informatica-actief.nl/">Informatica Actief</a>
+					</th>
+					<td>
+						<a href="http://milliondollarrun.tk/">Million Dollar Run</a>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<a href="http://www.instruct.nl/product/298//informaticaprijs">3i Award 2018</a>
+					</th>
+					<td>
+						<a href="https://github.com/StevenBrons/Learning">Study Project "Zelflerende Systemen"</a>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<h2>Work Experience</h2>
+				<table id="work_experience" class="section">
+					<tr>
+						<th>Albert Heijn afdeling verkoopklaar</th>
+						<td>
+							2 years
+						</td>
+					</tr>
+				</table>
+			<h2>Technologies</h2>
+			<div id="technologies" class="section">
+				<h3>Applications</h3>
+					<div id="application" class="section">
+						<div class="tech">Java 8</div>
+					</div>
+				<h3>Servers</h3>
+					<div id="servers" class="section">
+						<div class="tech">Node.js</div>
+						<div class="tech">MySQL</div>
+					</div>
+				<h3>Websites</h3>
+					<div id="websites" class="section">
+						<div class="tech">HTML 5</div>
+						<div class="tech">CSS 4</div>
+						<div class="tech">JavaScript</div>
+						<div class="tech">ECMAScript</div>
+					</div>
+			</div>
+			<h2>Used Tools</h2>
+			<div id="used_tools" class="section">
+				<div class="tech">Eclipse</div>
+				<div class="tech">Sublime Text 3</div>
+				<div class="tech">MySQL Workbench</div>
+				<div class="tech">Microsoft Access</div>
+				<div class="tech">Microsoft Word</div>
+				<div class="tech">Microsoft Powerpoint</div>
+				<div class="tech">Microsoft Excel</div>
+				<div class="tech">LaTeX</div>
+				<div class="tech">GitHub</div>
+				<div class="tech">Paint.net</div>
+				<div class="tech">Prezi</div>
+				<div class="tech">Discord</div>
+				<div class="tech">Skype</div>
+				<div class="tech">Notepad++</div>
+				<div class="tech">Postman</div>
+				<div class="tech">Putty</div>
+				<div class="tech">Filezilla</div>
+				<div class="tech">Google Sketchup</div>
+				<div class="tech">WinRAR</div>
+				<div class="tech">Xampp</div>
+				<div class="tech">Regular Expressions</div>
+			</div>
+			<h2 style="padding-left: 12.5%;">
+            Projects
+            
+				<svg id="searchIcon" onclick="searchIconClick()" height="48" viewBox="0 0 24 24" width="48"
+					xmlns="http://www.w3.org/2000/svg">
+					<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+					<path d="M0 0h24v24H0z" fill="none"/>
+				</svg>
+			</h2>
+			<div id="filters" style="display: none;">
+				<input id="search" type="text" placeholder="search term" onkeydown="search()" onkeydown="search()"></input>
+				<select id="order" type="text" value="latest" onchange="sort()">
+					<option id="order" value="latest">latest</option>
+					<option id="order" value="oldest">oldest</option>
+				</select>
+			</div>
+			<div id="list" class="list"></div>
+		</div>
+		<script type="text/javascript">
+        // on hold 		currently working on
+         // completed	completed and ended
+         // dropped		not ever working on it again		
+         // active		ended but may work on it again
+         // supported	ended but may work on it again
+         
+         let list =	[
+           {
+             "title": "Cijfer Meter",
+             "description": "My first official program. It is a tool to calculate what grade you have to get to obtain a certain average.",
+             "type": "project",
+             "tags": ["coding","java"],
+             "started": "6-6-2014",
+             "ended": "15-6-2014",
+             "icon": "CijferMeter.png",
+             "links": [
+              {
+                 "title": "download",
+                 "url": "http://www.mediafire.com/file/ge5196cmq9120g1/Cijfer+Meter+4.0.jar"
+               },
+              {
+                 "title": "download",
+                 "url": "http://adf.ly/pbhIq"
+               }
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Million Dollar Run",
+             "description": "A online multiplayer board game where you strive towards making a million dollars. This project was made for a programming contest. We gained first place with this entry.",
+             "type": "project",
+             "tags": ["top","coding","nodejs","html","javascript","css"],
+             "started": "20-11-2017",
+             "ended": "20-11-2017",
+            	"icon": "MillionDollarRun.png",
+             "links": [
+              {
+                 "title": "website",
+                 "url": "http://www.milliondollarrun.tk/"
+               },
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Steven API",
+             "description": "An api used by various projects. Used for version control and basic SQL access through the web.",
+             "type": "project",
+             "tags": ["coding","nodejs","swagger","sql"],
+             "started": "10-2015",
+             "ended": "5-2016",
+            	"icon": "StevenAPI.png",
+             "links": [
+              {
+                 "title": "website",
+                 "url": "http://stevenapi.tk/"
+               },
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Space Game",
+             "description": "An online multiplayer space shooter set in a big generated galaxy.",
+             "type": "project",
+             "tags": ["top","coding","nodejs","javascript","html"],
+             "started": "15-11-2015",
+             "ended": "3-8-2017",
+            	"icon": "SpaceGame.png",
+             "status":"completed"
+           },
+          {
+             "title": "Hack It",
+             "description": "A search engine for students at my school deliberately made vulnerable to SQL-injections so my fellow students could experience vulnerabilities in databases.",
+             "type": "project",
+             "tags": ["coding","nodejs","javascript","html","SQL"],
+             "started": "8-12-2016",
+             "ended": "8-12-2016",
+            	"icon": "HackIt.png",
+             "status":"completed"
+           },
+          {
+             "title": "2list.tk",
+             "description": "A website to help you with learning words. The website will store the lists of words so you can learn everywhere.",
+             "type": "project",
+             "tags": ["top","coding","nodejs","html","javascript","css","sql"],
+             "started": "9-2015",
+             "ended": "12-2016",
+            	"icon": "2list.png",
+             "links": [
+              {
+                 "title": "webstie",
+                 "url": "http://2list.tk/"
+               },
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Fire's Source",
+             "description": "Fire's Source is a 2D platformer where you play as a little flame that slowly runs out of energy.",
+             "type": "project",
+             "tags": ["top","coding","java","game"],
+             "started": "31-7-2017",
+             "ended": "14-9-2017",
+            	"icon": "FiresSource.png",
+             "links": [
+              {
+                 "title": "download",
+                 "url": "https://1-steven-748415.itch.io/fires-source"
+               },
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Ludum Dare #40",
+             "description": "A 2D shooter made for the 48 hour game jam Ludum Dare #40.",
+             "type": "project",
+             "tags": ["coding","java","game"],
+             "started": "2-12-2017",
+             "ended": "3-12-2017",
+            	"icon": "LudumDare40.png",
+             "links": [
+              {
+                 "title": "download",
+                 "url": "https://1-steven-748415.itch.io/ludum-dare-40"
+               },
+              {
+                 "title": "website",
+                 "url": "https://ldjam.com/events/ludum-dare/40/ludum-dare-40-2d-pixel-shooter"
+               },
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Newton's Method",
+             "description": "A visual representation of newton's method.",
+             "type": "project",
+             "tags": ["coding","java","pws"],
+             "started": "17-7-2017",
+             "ended": "18-10-2017",
+            	"icon": "NewtonsMethod.png",
+             "links": [
+              {
+                 "title": "github",
+                 "url": "https://github.com/smp15/learning/tree/master/Praktijk/NewtonsMethod"
+               },
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Neural Network",
+             "description": "A visual representation of a neural network with one hidden layer used to solve basic logic gates and handwritten digit recognition.",
+             "type": "project",
+             "tags": ["top","coding","java","pws"],
+             "started": "19-9-2017",
+             "ended": "6-10-2017",
+            	"icon": "NeuralNetwork.png",
+             "links": [
+              {
+                 "title": "github",
+                 "url": "https://github.com/smp15/learning/tree/master/Praktijk/NeuralNetwork"
+               },
+             ],
+             "status":"completed"
+           },
+          {
+             "title": "Text",
+             "description": "My first game. It is a simple platformer which uses characters instead of pixels (because I didn't know how to draw pixels at the time).",
+             "type": "project",
+             "tags": ["coding","java","game"],
+             "started": "6-6-2014",
+             "ended": "4-8-2014",
+            	"icon": "Text.png",
+             "status":"completed"
+           },
+          {
+             "title": "Roguelike One",
+             "description": "The first start of a game. The goal was to create a rogue like dungeon crawler.",
+             "type": "project",
+             "tags": ["coding","java","game"],
+             "started": "27-1-2017",
+             "ended": "2-2017",
+            	"icon": "Roguelike1.png",
+             "status":"dropped"
+           },
+          {
+             "title": "Enigma Cracker",
+             "description": "A program to crack the famous enigma code using the technique Alan Turing invented.",
+             "type": "project",
+             "tags": ["top","coding","java"],
+             "started": "14-4-2017",
+             "ended": "5-5-2017",
+             "icon": "EnigmaCracker.png",
+             "status":"completed"
+           },
+          {
+             "title": "Proxy",
+             "description": "A proxy to redirect domains to different ports.",
+             "type": "project",
+             "tags": ["coding","nodejs"],
+             "started": "25-6-2016",
+             "ended": "25-6-2016",
+             "icon": "Proxy.png",
+             "status":"supported"
+           },
+          {
+             "title": "16 x 16",
+             "description": "A game platformer with a screen of only 16 by 16 pixels.",
+             "type": "project",
+             "tags": ["coding","html","javascript"],
+             "started": "15-2-2016",
+             "ended": "20-2-2016",
+             "icon": "16By16.png",
+             "status":"completed"
+           },
+          {
+             "title": "Recursion",
+             "description": "A game based on fractal recursion.",
+             "type": "project",
+             "tags": ["coding","java"],
+             "started": "13-7-2016",
+             "ended": "29-7-2016",
+             "icon": "Recursion.png",
+             "status":"on hold"
+           },
+          {
+             "title": "Solaris",
+             "description": "A simulation of our solar system.",
+             "type": "project",
+             "tags": ["coding","java"],
+             "started": "24-10-2017",
+             "ended": "15-11-2017",
+             "icon": "Solaris.png",
+             "status":"completed"
+           },
+          {
+             "title": "Project List",
+             "description": "A list of all projects I have worked on. (This website)",
+             "type": "project",
+             "tags": ["coding","java"],
+             "started": "9-1-2018",
+             "ended": "20-1-2018",
+             "links": [
+              {
+                 "title": "website",
+                 "url": window.location.href
+               },
+             ],
+             "icon": "ProjectList.png",
+             "status":"active"
+           },
+          {
+             "title": "Discord statistics bot",
+             "description": "A bot to collect data on discord servers.",
+             "type": "project",
+             "tags": ["coding","sql","nodejs","html","css"],
+             "started": "23-11-2017",
+             "ended": "3-1-2018",
+             "icon": "DiscordStatisticsBot.png",
+             "status":"on hold"
+           },
+          {
+             "title": "AIVD Kerstpuzzel #7",
+             "description": "The Dutch bureau of intelligence releases a puzzle each year. I made a few programs to try and solve some of the puzzles.",
+             "type": "project",
+             "tags": ["coding","java"],
+             "started": "23-12-2017",
+             "ended": "2-1-2018",
+             "icon": "Kerstpuzzel7.png",
+             "status":"completed"
+           },
+          {
+             "title": "Stroomlijners App",
+             "description": "An app to give tips on energy saving. Made for the organisation HopeXXL.",
+             "type": "project",
+             "tags": ["top","coding","php","sql","html","css","app"],
+             "started": "6-2015",
+             "ended": "12-2016",
+             "icon": "StroomlijnersApp.png",
+             "status":"on hold"
+           }
+         ];
+         
+        function searchIconClick() {
+         if (document.getElementById("filters").style.display == "none") {
+         		document.getElementById("filters").style.display = "block"; 
+         }else {
+         		document.getElementById("filters").style.display = "none"; 
+         	}
+         }
+         
+         
+        function search() {
+         	var objects = document.getElementById("list").children;
+         for (var i = 0; i < objects.length; i++) {
+         		var str = JSON.stringify(list[i]).toLowerCase();
+         		var term = document.getElementById("search").value.toLowerCase();
+         	if (str.indexOf(term) != -1) {
+         			objects[i].style.display = "block";
+         	}else {
+         			objects[i].style.display = "none";
+         		}
+         		
+         	}
+         	document.getElementById("list").scrollIntoView(); 
+         }
+         
+        function sort() {
+         list.sort(function (a,b) {
+         		var s1 = a.started.split("-");
+         		var d1 = new Date(s1[s1.length - 1], s1[s1.length - 2])
+         
+         		var s2 = b.started.split("-");
+         		var d2 = new Date(s2[s2.length - 1], s2[s2.length - 2])
+         
+         		var q1 = document.getElementById("order").value == "latest";
+         	if (d1 > d2) {
+         			return q1?-1:1;
+         	}else {
+         			return q1?1:-1;
+         		}
+         	});
+         	update();
+         }
+         
+        function formatDate(d) {
+         	var s = d.split("-");
+         switch (s[s.length - 2]) {
+         		case "1": return "January " + s[s.length - 1];
+         		case "2": return "February " + s[s.length - 1];
+         		case "3": return "March " + s[s.length - 1];
+         		case "4": return "April " + s[s.length - 1];
+         		case "5": return "May " + s[s.length - 1];
+         		case "6": return "June " + s[s.length - 1];
+         		case "7": return "July " + s[s.length - 1];
+         		case "8": return "August " + s[s.length - 1];
+         		case "9": return "September " + s[s.length - 1];
+         		case "10": return "October " + s[s.length - 1];
+         		case "11": return "November " + s[s.length - 1];
+         		case "12": return "December " + s[s.length - 1];
+         	}
+         }
+         
+         sort();
+         
+        function update() {
+         document.getElementById("list").innerHTML = "";
+        for (let i = 0; i < list.length;i++) {
+         	var o = list[i];
+         
+         	let listEl = document.getElementById("list");
+         		let obj = document.createElement("div");
+         		obj.className = "object";
+         
+         	let icon;
+         	if (o.icon != null) {
+         			icon = document.createElement("img");
+         			icon.className = "icon";
+         			icon.src = o.icon;
+         			obj.appendChild(icon); 
+         		}
+         
+         		let title = document.createElement("h3");
+         		title.className = "title";
+         		title.textContent = o.title;
+         		obj.appendChild(title); 
+         
+         	let date = document.createElement("div");
+         		date.className = "date";
+         		obj.appendChild(date); 
+         	if (o.ended != "nvt") {
+         			 date.textContent = formatDate(o.ended);
+         	}else {
+         			date.textContent = "ongoing";
+         		}
+         
+         		let status = document.createElement("div");
+         		status.className = "status";
+         		status.textContent = o.status;
+         		obj.appendChild(status); 
+         
+         		let desc = document.createElement("p");
+         		desc.className = "desc";
+         		desc.textContent = o.description;
+         		obj.appendChild(desc); 
+         
+         	obj.addEventListener("mouseover", function () {
+         			icon.style.filter = "grayscale(0%)";
+            	}); 
+         
+         	obj.addEventListener("mouseleave", function () {
+         			icon.style.filter = "grayscale(100%)";
+         		}); 
+         
+         		listEl.appendChild(obj);
+         
+         	}
+         	search();
+         }
+    
+		</script>
+	</body>
+</html>
